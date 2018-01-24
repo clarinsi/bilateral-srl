@@ -2,15 +2,19 @@
 
 ## Data
 
-The data used for benchmarking various SRL tools was produced during the Croatian-Slovene bilateral project (Institute of Language and Linguistics, Zagreb, Jožef Stefan Institute, Ljubljana, further details to be added). The Croatian and Slovene datasets, which are parts of standard training corpora for Croatian (hr500k) and Slovene (ssj500k) are available in ```data/sl``` and ```data/hr``. For now, each dataset is split in training:testing data only (dev to be added when will become necessary), following a 8:2 ratio.
+The data used for benchmarking various SRL tools was produced during the Croatian-Slovene bilateral project (Institute of Language and Linguistics, Zagreb, Jožef Stefan Institute, Ljubljana, further details to be added). The Croatian and Slovene datasets, which are parts of standard training corpora for Croatian (hr500k) and Slovene (ssj500k) are available in ```data/sl``` and ```data/hr```. For now, each dataset is split in training:testing data only (dev to be added when will become necessary), following a 8:2 ratio.
 
 ## mate-tools
 
-We performed no adaptation of the tool, using German feature functions. The output on the tool is available in ```tools/mate-tools/hr.test.mate.out``` and ```tools/mate-tools/sl.test.mate.out```. The gold data is available in ```tools/mate-tools/hr.test.mate``` and ```tools/mate-tools/sl.test.mate```.
+We performed no adaptation of the tool, using German feature functions.
 
-Evaluation is performed on (1) predicate identification and (2) semantic roles. While evaluating semantic roles, both the predicate and the label have to be correct to assess the instance as correct.
+The output on the tool is available in ```tools/mate-tools/hr.test.mate.out``` and ```tools/mate-tools/sl.test.mate.out```.
 
-Important notice: features exploit lower levels of linguistic annotation which are currently manual / gold. Substituting these annotations with automatic ones is a to-do.
+The gold data is available in ```tools/mate-tools/hr.test.mate``` and ```tools/mate-tools/sl.test.mate```.
+
+Evaluation is performed on (1) predicate identification and (2) semantic role labeling. While evaluating semantic roles, both the predicate and the label have to be correct to assess the label as correct.
+
+Important notice: features exploit lower levels of linguistic annotation which are currently manual / gold. Substituting these annotations with automatic ones is a todo.
 
 For evaluation the ```tools/mate-tools/eval.py``` script is used.
 
