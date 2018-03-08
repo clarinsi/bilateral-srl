@@ -2,7 +2,9 @@
 
 ## Data
 
-The data used for benchmarking various SRL tools was produced during the Croatian-Slovene bilateral project (Institute of Language and Linguistics, Zagreb, Jožef Stefan Institute, Ljubljana, further details to be added). The Croatian and Slovene datasets, which are parts of standard training corpora for Croatian (hr500k) and Slovene (ssj500k) are available in ```data/sl``` and ```data/hr```. For now, each dataset is split in training:testing data only (dev to be added when will become necessary), following a 8:2 ratio.
+The data annotation used for benchmarking various SRL tools was coordinated during the Croatian-Slovene bilateral project (Institute of Language and Linguistics, Zagreb, Jožef Stefan Institute, Ljubljana). The Slovene data was annotated inside the "ARRS J6-8256: Nova slovnica sodobne standardne slovenščine: viri in metode" project.
+
+The Croatian and Slovene datasets, which are parts of standard training corpora for Croatian (hr500k) and Slovene (ssj500k) are available in ```data/sl``` and ```data/hr```. For now, each dataset is split in training:testing data only (dev to be added when will become necessary), following a 8:2 ratio.
 
 ## mate-tools
 
